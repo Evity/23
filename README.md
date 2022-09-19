@@ -14,7 +14,7 @@
 >
 > Design patterns may be viewed as a structured approach to [computer programming](https://en.wikipedia.org/wiki/Computer_programming) intermediate between the levels of a [programming paradigm](https://en.wikipedia.org/wiki/Programming_paradigm) and a concrete [algorithm](https://en.wikipedia.org/wiki/Algorithm).
 
-*There were 23 design patterns in tradition, nowadays it's way beyond 23*
+*In book *[Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns_(book))* there are 23 patterns in total*
 
 **Polymorphism is the key**
 
