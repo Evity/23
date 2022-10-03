@@ -46,12 +46,12 @@ type General struct {
 }
 
 func (s *Soldier) Equip(ar assaultRifle) {
-	fmt.Println("Soldier equip AR-15")
+	fmt.Println("Soldier equip gun")
 	ar.Fire()
 }
 
 func (g *General) Equip(ar assaultRifle) {
-	fmt.Println("Soldier equip AR-15")
+	fmt.Println("Soldier equip gun")
 	ar.Fire()
 }
 

@@ -2,7 +2,9 @@ package main
 
 import "fmt"
 
+//Composite Reuse Principle
 //Classes that are used together are packaged together.
+//Composition is higher privilege than inherits
 
 type Carrot struct{}
 
@@ -19,11 +21,15 @@ func (cc *childCarrot) Imitate() {
 }
 
 type fusionCarrot struct {
-	c Carrot
+	c *Carrot
 }
 
-func (fc *fusionCarrot) Imitate() {
+func (fc *fusionCarrot) Imitate() { //composite is less coupling
 	fmt.Println("Hello!")
+}
+
+func (fc *fusionCarrot) Sing(c *Carrot) { //least coupling
+	c.Sing()
 }
 
 func main() {
@@ -36,4 +42,5 @@ func main() {
 	fusionCarrot := new(fusionCarrot)
 	fusionCarrot.c.Sing()
 	fusionCarrot.Imitate()
+	fusionCarrot.Sing(&Carrot{})
 }

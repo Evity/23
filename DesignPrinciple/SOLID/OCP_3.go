@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+//You should be able to extend a classes behavior, without modifying it
+
 type UG interface {
 	Do()
 }

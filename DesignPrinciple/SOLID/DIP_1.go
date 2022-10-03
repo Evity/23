@@ -2,7 +2,9 @@ package main
 
 import "fmt"
 
+//Dependence Inversion Principle
 //A reverse example of DIP
+//DIP Depend on abstractions, not on concretions.
 
 type AR struct {
 }
