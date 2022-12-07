@@ -28,24 +28,24 @@ func main() {
 }
 */
 
-type ClothesShop struct{}
+type clothesShop struct{}
 
-func (cs *ClothesShop) Style() {
+func (cs *clothesShop) Style() {
 	fmt.Println("On shopping")
 }
 
-type ClothesWork struct{}
+type clothesWork struct{}
 
-func (cw *ClothesWork) Style() {
+func (cw *clothesWork) Style() {
 	fmt.Println("On working")
 }
 
 func main() {
 	//Working tx
-	cw := ClothesWork{}
+	cw := clothesWork{}
 	cw.Style()
 
 	//Shopping tx
-	cs := ClothesShop{}
+	cs := clothesShop{}
 	cs.Style()
 }

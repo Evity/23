@@ -12,8 +12,8 @@ type Task struct{}
 
 var tasks []*Task
 
-func NewTask() {
-	tasks = append(tasks, &Task{})
+func NewTask(t *Task) {
+	tasks = append(tasks, t)
 }
 
 func LoadTask() *Task {
@@ -38,7 +38,7 @@ type PM struct {
 Dev working on task, meanwhile the task is transparent to others*/
 
 func (p *PM) FinishTheJob() {
-	dev := &Dev{}
+	dev := NewDev()
 	dev.finishTheJob()
 }
 
